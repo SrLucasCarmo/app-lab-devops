@@ -3,7 +3,7 @@ FROM nginx:alpine
 
 # Defina a versão do curl disponível no repositório da imagem base
 # Dica: descubra a versão com: docker run --rm nginx:alpine sh -lc 'apk info -v curl'
-ARG CURL_VERSION=8.14.1-r1
+ARG CURL_VERSION=8.14.1-r2
 
 # Instalação + página em um único RUN (evita DL3059) e pin de versão (resolve DL3018)
 RUN --mount=type=cache,target=/var/cache/apk \
